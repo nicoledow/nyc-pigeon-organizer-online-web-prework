@@ -89,7 +89,9 @@ def nyc_pigeon_organizer(data)
  
  #adding a "gender" key to each bird whose value is an array
  data[:gender].each do |gender, group_of_birds|
-   binding.pry
+   group_of_birds.each do |bird|
+     binding.pry
+    end
  end
   
   pigeon_list
