@@ -94,6 +94,6 @@ def nyc_pigeon_organizer(data)
       pigeon_list[bird][:gender] << gender.to_s
     end
  end
-  binding.pry
+  
   pigeon_list
 end
