@@ -91,7 +91,7 @@ def nyc_pigeon_organizer(data)
  data[:gender].each do |gender, group_of_birds|
    group_of_birds.each do |bird|
       pigeon_list[bird][:gender] = []
-      pigeon_list[bird][:gender] << gender
+      pigeon_list[bird][:gender] << gender.to_s
     end
  end
   binding.pry
