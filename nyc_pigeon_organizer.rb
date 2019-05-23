@@ -74,7 +74,8 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
-  
+ 
+ #adding a "color" key to each bird whose value is an array containing all its colors 
  data[:color].each do |color, group_of_birds|
    group_of_birds.each do |bird|
     if pigeon_list[bird].has_key?(:color)
@@ -84,6 +85,11 @@ def nyc_pigeon_organizer(data)
       pigeon_list[bird][:color] << color.to_s
     end
    end
+ end
+ 
+ #adding a "gender" key to each bird whose value is an array
+ data[:gender].each do |gender, group_of_birds|
+   binding.pry
  end
   
   pigeon_list
