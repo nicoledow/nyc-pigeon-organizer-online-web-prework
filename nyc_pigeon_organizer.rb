@@ -77,7 +77,7 @@ def nyc_pigeon_organizer(data)
   
  data[:color].each do |color, group_of_birds|
    group_of_birds.each do |bird|
-    binding.pry
+    if pigeon_list[bird].has_key
    end
  end
   
